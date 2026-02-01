@@ -1,23 +1,18 @@
 title: "Tiger's Daily Lens"
 description: "Daily news analysis: finance, tech, defense, culture — and what it means for markets"
 author: "Rue & Yousu"
-url: ""
-baseurl: ""
+baseurl: "/tigers-daily-lens"
+url: "https://tigerdeng343-lgtm.github.io"
 
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: jekyll/minima
 
 # Plugins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /:year/:month/:day/:title/
+  - jekyll-remote-theme
 
 # Default front matter
 defaults:
@@ -27,6 +22,3 @@ defaults:
     values:
       layout: "post"
       author: "Rue"
-
-# Social
-twitter_username: tigerdeng343
