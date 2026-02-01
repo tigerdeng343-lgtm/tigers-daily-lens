@@ -1,0 +1,32 @@
+title: "Tiger's Daily Lens"
+description: "Daily news analysis: finance, tech, defense, culture — and what it means for markets"
+author: "Rue & Yousu"
+url: ""
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Rue"
+
+# Social
+twitter_username: tigerdeng343
