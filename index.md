@@ -20,7 +20,7 @@ Plus actionable insights: what to watch, what to consider buying, what to avoid.
 ## Latest Posts
 
 {% for post in site.posts limit:10 %}
-### [{{ post.title }}]({{ post.url }})
+### [{{ post.title }}]({{ post.url | relative_url }})
 *{{ post.date | date: "%B %d, %Y" }}* — {{ post.excerpt | strip_html | truncate: 150 }}
 
 {% endfor %}
